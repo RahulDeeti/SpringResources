@@ -1,0 +1,46 @@
+
+
+@Override
+
+@Component
+
+@ComponentScan("mention package to search for components")
+
+@Component("id") //id is optional
+
+@Autowired
+
+Qualifier("beanId")
+
+Scope("mention scope type")
+
+
+****************************************************
+ANNOTATIONS FOR BEAN LIFE CYCLE BEGINNING AND ENDING
+****************************************************
+
+@PostConstruct
+
+@PreDestroy
+
+
+*******************************************
+JAVA CONFIGURATION CLASS
+*******************************************
+
+@Configuration
+
+@ComponentScan("mention package to search for components")
+
+@Bean
+
+@PropertySource("location of the file")
+	
+	Ex: "classpath:sport.properties"
+
+
+@Value("${}")
+	
+	Ex:	
+	@Value("${foo.name}")
+	It is used for injecting values
